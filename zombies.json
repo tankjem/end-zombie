@@ -2,45 +2,54 @@
   "name": "MASTER ZOMBIE",
   "type": "master_zombie",
   "hp": 150,
+  "maxHp": 150,
   "damage": 12
   },{
   "name": "SUPER ZOMBIE", 
   "type": "super_zombie",
   "hp": 100,
+  "maxHp": 100,
   "damage": 15
   },{
   "name": "ZOMBIE BUTCHER",
   "type": "zombie",
   "hp": 75,
+  "maxHp": 75,
   "damage": 20
   },{
   "name": "ZOMBIE BARBER",
   "type": "zombie",
   "hp": 75,
+  "maxHp": 75,
   "damage": 20
   },{
   "name": "ZOMBIE BUTCHER",
   "type": "zombie",
   "hp": 75,
+  "maxHp": 75,
   "damage": 20
   },{
   "name": "ZOMBIE GARDENER",
   "type": "zombie",
   "hp": 75,
+  "maxHp": 75,
   "damage": 20
   },{
   "name": "ZOMBIE PILOT",
   "type": "zombie",
   "hp": 75,
+  "maxHp": 75,
   "damage": 20
   },{
   "name": "ZOMBIE MECHANIC",
   "type": "zombie",
   "hp": 75,
+  "maxHp": 75,
   "damage": 20
   },{
   "name": "ZOMBIE DOCTOR",
   "type": "zombie",
   "hp": 75,
+  "maxHp": 75,
   "damage": 20
   }]

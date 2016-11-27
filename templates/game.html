@@ -21,21 +21,9 @@
       <tr ng-repeat="zombie in zombies | orderBy: header : reverse">
         <td>{{zombie.name}}</td>
         <td>{{zombie.type}}</td>
-        <td>{{zombie.hp}}</td>
+        <td id="{{zombie.name}}" class="green">{{zombie.hp}}</td>
       </tr>
     </table>
 
-  <!-- <ul class="row">
-    <li class="list-group-item col-sm-4">
-      <p>Name</p>
-    </li>
-    <li class="list-group-item col-sm-4">
-      <p>Type</p>
-    </li>
-    <li class="list-group-item col-sm-4">
-      <p>HP</p>
-    </li>
-  </ul>
- -->
 </div>
 <a  ui-sref="home">Back</a>
