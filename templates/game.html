@@ -1,1 +1,15 @@
-<h1>Game</h1>
+<div class="container">
+  <div class="game-screen">
+    <h3>Get ready to shoot your way out</h3>
+    <div>
+      <p> Shots Fired</p>
+      <div class="btn btn-danger">Shoot</div>
+    </div>
+
+    <div ng-repeat="zombie in zombies">
+      <p>{{zombie.name}}</p>
+    </div>
+
+  </div>
+</div>
+<a ui-sref="home">Back</a>
