@@ -3,6 +3,7 @@ angular
   .controller("GameController", GameController)
 
 function GameController($scope, $http) {
+  
   $http.get("../zombies.json")
   .success(function(data, status, headers, config) {
   $scope.zombies = data;
@@ -10,4 +11,5 @@ function GameController($scope, $http) {
   error(function(data, status, headers, config) {
 
   });
+
 } 

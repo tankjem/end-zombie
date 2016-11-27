@@ -13,15 +13,11 @@ html, body, main {
     max-width: 100%;
     text-align: center;
 }
-.container {
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-  margin-top: 5%;
-}
+
 .game-screen{
-  width: 900px;
+  width: 100%;
   height: 600px;
   background-color: grey;
-  margin-left: 200px;
+  /*margin-left: 50px;*/
 }
+

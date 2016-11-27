@@ -4,7 +4,7 @@
   "hp": 150,
   "damage": 12
   },{
-  "name": "SUPER ZOMBIE A", 
+  "name": "SUPER ZOMBIE", 
   "type": "super_zombie",
   "hp": 100,
   "damage": 15
@@ -23,4 +23,24 @@
   "type": "zombie",
   "hp": 75,
   "damage": 20
-}]
+  },{
+  "name": "ZOMBIE GARDENER",
+  "type": "zombie",
+  "hp": 75,
+  "damage": 20
+  },{
+  "name": "ZOMBIE PILOT",
+  "type": "zombie",
+  "hp": 75,
+  "damage": 20
+  },{
+  "name": "ZOMBIE MECHANIC",
+  "type": "zombie",
+  "hp": 75,
+  "damage": 20
+  },{
+  "name": "ZOMBIE DOCTOR",
+  "type": "zombie",
+  "hp": 75,
+  "damage": 20
+  }]
