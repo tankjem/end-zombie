@@ -31,12 +31,14 @@ angular
     
     $scope.shotsFired = 0
 
+    var zombieTarget
+
     $scope.shoot = function(){
       console.log("shots fired");
       $scope.shotsFired +=1
 
       var randomNumber = Math.floor(Math.random()* $scope.zombies.length)
-      var zombieTarget = $scope.zombies[randomNumber]
+      zombieTarget = $scope.zombies[randomNumber]
       zombieTarget.hp -= zombieTarget.damage
 
       var hpLeft = 100/zombieTarget.maxHp*zombieTarget.hp
@@ -45,7 +47,7 @@ angular
       }else if (hpLeft < 40 && hpLeft >= 1){
         document.getElementById(zombieTarget.name).className="red";
       }
-      if (zombieTarget.hp <= 0) {
+      if (zombieTarget.hp <= 0 ) {
         zombieTarget.hp = 0
         $scope.zombiesKilled.push(zombieTarget)
         $scope.zombies.splice(randomNumber, 1)
