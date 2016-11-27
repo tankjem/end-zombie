@@ -7,6 +7,7 @@ angular
     $scope.zombies = []
     $scope.zombiesKilled = []
 
+    $scope.getZombies = function (){
     $http.get("../zombies.json")
       .success(function(data, status, headers, config) {
       $scope.zombies = data;
@@ -14,6 +15,10 @@ angular
       error(function(data, status, headers, config) {
 
       });
+      $scope.zombiesKilled = []
+      $scope.shotsFired = 0
+      $timeout.cancel($scope.timeout);
+    }
 
     $scope.header ='name';
     $scope.reverse = true;
@@ -42,8 +47,8 @@ angular
       }
       if (zombieTarget.hp <= 0) {
         zombieTarget.hp = 0
-        $scope.zombiesKilled.push(zombieTarget);
-        $scope.zombies.splice(randomNumber, 1);
+        $scope.zombiesKilled.push(zombieTarget)
+        $scope.zombies.splice(randomNumber, 1)
         $scope.checkWinner();
       }
       
@@ -51,6 +56,14 @@ angular
     $scope.checkWinner = function(){
       if ($scope.zombies.length === 0 || zombieTarget.name === "MASTER ZOMBIE") {
         $state.go("winner");
+        $scope.timeout = $timeout(function(){
+          $state.go("home");
+        }, 10000)
       }
+
     }
+
+
+
+
 } 
