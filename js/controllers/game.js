@@ -4,8 +4,6 @@ angular
 
   function GameController($scope, $http, $state, $timeout) {
 
-  $scope.zombies = []
-  $scope.zombiesKilled = []
 
   $scope.getZombies = function (){
   $http.get("../zombies.json")
@@ -49,8 +47,7 @@ angular
     }
     if (zombieTarget.hp <= 0 ) {
       zombieTarget.hp = 0
-      $scope.zombiesKilled.push(zombieTarget)
-      $scope.zombies.splice(randomNumber, 1)
+      document.getElementById(zombieTarget.name).className="grey";
       $scope.checkWinner();
     }
     

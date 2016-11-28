@@ -23,7 +23,9 @@ html, body, main {
 td {
   text-align: left;
 }
-
+.health{
+  color:green;
+}
 .green {
   color: green;
 }

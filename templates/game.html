@@ -18,10 +18,10 @@
           <div ng-click="sortBy('hp')">HP</div>
         </th>
       </tr>
-      <tr ng-repeat="zombie in zombies | orderBy: header : reverse">
+      <tr id="{{zombie.name}}" class="green" ng-repeat="zombie in zombies | orderBy: header : reverse">
         <td>{{zombie.name}}</td>
         <td>{{zombie.type}}</td>
-        <td id="{{zombie.name}}" class="green">{{zombie.hp}}</td>
+        <td>{{zombie.hp}}</td>
       </tr>
     </table>
 
